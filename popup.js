@@ -7,6 +7,8 @@ chrome.storage.sync.get("color", ({ color }) => {
 
 // When the button is clicked, inject setPageBackgroundColor into current page
 changeColor.addEventListener("click", async () => {
+let pickColor = await document.getElementById("myColor").value; 
+chrome.storage.sync.set({ pickColor });
   let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
   chrome.scripting.executeScript({
@@ -18,7 +20,8 @@ changeColor.addEventListener("click", async () => {
 // The body of this function will be executed as a content script inside the
 // current page
 function setPageBackgroundColor() {
-  chrome.storage.sync.get("color", ({ color }) => {
-    document.body.style.backgroundColor = color;
+  chrome.storage.sync.get("pickColor", ({ pickColor }) => {
+    document.body.style.backgroundColor = pickColor;
   });
+ 
 }
