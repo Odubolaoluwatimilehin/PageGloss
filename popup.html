@@ -4,8 +4,30 @@
     <link rel="stylesheet" href="button.css">
   </head>
   <body>
+     <div>
+	<img src="/images/logo48.png" > 
+         PhotoGloss for Chrome       
+     </div>
+	<div>
+Quick Settings
+</div>
+<div>
      A color picker:  <input type="color" id="myColor">
-    <button id="changeColor">Apply</button>
+     Apply:
+	<label class="switch">
+          
+	  <input id="changeColor" type="checkbox">
+          
+	  <span class="slider round"></span>
+	</label> 
+</div>
+<div>
+       Turn Off:
+	<label class="switch">
+	  <input id="turnoffColor"  type="checkbox">
+	  <span class="slider round"></span>
+	</label>    
+</div>
      <script src="popup.js"></script>
   </body>
 </html>
