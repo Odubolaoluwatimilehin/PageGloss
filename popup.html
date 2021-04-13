@@ -6,29 +6,31 @@
 </head>
 
 <body>
-  <div class="row">
-    <div class="column left"> <img src="/images/logo48.png"></div>
-    <div class="column right">
-      <h2>
-        PhotoGloss for Chrome
-      </h2>
+  <div class="container">
+
+    <header class="header">
+      <div class="column left"> <img src="/images/logo48.png"></div>
+      <div class="column right">
+        <label class="switch">
+          <input id="turnoffColor" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+
+    <div class="picker">
+      <p>
+        Quick Settings
+      </p>
+
+      <div id='color-picker'>
+        <label for="myColor">A color picker:</label>
+        <input type="color" id="myColor">
+        <button id="changeColor">Apply</button>
+      </div>
     </div>
   </div>
-  <div>
-    Quick Settings
-  </div>
-  <div>
-    A color picker: <input type="color" id="myColor">
-    Apply:
-    <button id="changeColor">Gloss</button>
-  </div>
-  <div>
-    Turn Off:
-    <label class="switch">
-      <input id="turnoffColor" type="checkbox">
-      <span class="slider round"></span>
-    </label>
-  </div>
+
   <script src="popup.js"></script>
 </body>
 
