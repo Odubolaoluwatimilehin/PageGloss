@@ -74,3 +74,21 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.row{
+  border-color: blue;
+  border-style: solid;
+}
