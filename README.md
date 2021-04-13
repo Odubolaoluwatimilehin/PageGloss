@@ -10,14 +10,14 @@ A chrome extension for changing  page aesthetics according to user preference. :
 
 Gives you the free reins to customizing how your webpage looks like. A good accesibility tool 🚀 🔥
 
----
+
 ### Project Setup
 - Download the Chrome Extension File to your computer
 - Go to [chrome://extensions/](chrome://extensions/) and check the box for Developer mode in the top right.
 - Locate the Chrome Extension File(the cloned project) on your computer, if zippid, unzip it.
 - Go back to the [chrome://extensions/](chrome://extensions/) page and click the Load unpacked extension button and select the unzipped folder for your extension to install it
 
----
+
 ### How to Contribute
 - Fork the project & clone locally.
 - Create an upstream remote and sync your local copy before you branch.
