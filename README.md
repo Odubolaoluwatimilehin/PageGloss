@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # PageGloss
 
 A chrome extension for changing page aesthetics according to user preference.
@@ -37,4 +37,4 @@ Gives you the free reins to customizing how your webpage looks like. A good acce
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
->>>>>>> 35f50c2edbe6f806cba5bf78850d63aae2f9fa98
+
