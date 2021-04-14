@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="button.css">
-  </head>
-  <body>
-     <div>
-	<img src="/images/logo48.png" > 
-         PhotoGloss for Chrome       
-     </div>
-	<div>
-Quick Settings
-</div>
-<div>
-     A color picker:  <input type="color" id="myColor">
-     Apply:
-	<label class="switch">
-          
-	  <input id="changeColor" type="checkbox">
-          
-	  <span class="slider round"></span>
-	</label> 
-</div>
-<div>
-       Turn Off:
-	<label class="switch">
-	  <input id="turnoffColor"  type="checkbox">
-	  <span class="slider round"></span>
-	</label>    
-</div>
-     <script src="popup.js"></script>
-  </body>
+
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <div class="column left"> <img src="/images/logo48.png"></div>
+      <div class="column right">
+        <label class="switch">
+          <input id="turnoffColor" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+
+    <div class="picker">
+      <p>
+        Quick Settings
+      </p>
+
+      <div id='color-picker'>
+        <label for="myColor">A color picker:</label>
+        <input type="color" id="myColor">
+
+        <div class="btn-wrapper" id="changeColor">
+          <div class="btn">
+            <span>apply</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
 </html>
