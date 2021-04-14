@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <div class="column left"> <img src="/images/logo48.png"></div>
+      <div class="column right">
+        <label class="switch">
+          <input id="turnoffColor" type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </header>
+
+    <div class="picker">
+      <p>
+        Quick Settings
+      </p>
+
+      <div id='color-picker'>
+        <label for="myColor">A color picker:</label>
+        <input type="color" id="myColor">
+
+        <div class="btn-wrapper" id="changeColor">
+          <div class="btn">
+            <span>apply</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
