@@ -30,6 +30,7 @@ Gives you the free reins to customizing how your webpage looks like. A good acce
 - Do the work and write good commit messages.
 - Push to your origin repository.
 - Create a new PR (Pull Request) in GitHub.
+Yaay!...you have made your first contribution.
 
 
 ---
